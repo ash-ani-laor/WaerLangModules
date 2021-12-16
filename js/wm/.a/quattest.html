@@ -1,0 +1,271 @@
+<html>
+<body>
+<script type='text/javascript'>
+
+// main
+
+function main()
+{
+	var newline = "<br />";
+	var coordsToRotate = new Coords(1, 2, 3);
+
+	document.write
+	(
+		"coordsToRotate is " 
+		+ coordsToRotate.toString() 
+		+ newline
+	);
+
+	var quaternionsForRotation = 
+	[
+		Quaternion.fromAxisAndRadiansToRotate( new Coords(0, 0, 1), Math.PI / 2 ),
+		Quaternion.fromAxisAndRadiansToRotate( new Coords(1, 0, 0), Math.PI / 2 ),
+	];
+
+	// rotate around one axis
+
+	var coordsRotatedOnce = quaternionsForRotation[0].applyToCoordsAsRotation
+	(
+		coordsToRotate.clone()
+	);
+
+	document.write
+	(
+		"coordsRotatedOnce is " 
+		+ coordsRotatedOnce.toString() 
+		+ newline
+	);
+
+	// reverse a single rotation
+
+	var quaternionForRotation0Inverted = quaternionsForRotation[0].clone().invert();
+
+	var coordsRotatedOnceAndBack = quaternionForRotation0Inverted.applyToCoordsAsRotation
+	(
+		coordsRotatedOnce.clone()
+	);
+
+	document.write
+	(
+		"coordsRotatedOnceAndBack is " 
+		+ coordsRotatedOnceAndBack.toString()
+		+ newline
+	);
+
+	// perform two separate rotations
+
+	var coordsRotatedTwice = quaternionsForRotation[1].applyToCoordsAsRotation
+	(
+		coordsRotatedOnce.clone()
+	);
+
+	document.write
+	(
+		"coordsRotatedTwice is " 
+		+ coordsRotatedTwice.toString()
+		+ newline
+	);
+
+	// perform two premultiplied rotations : note the reversed order
+
+	var quaternionsMultiplied = quaternionsForRotation[1].clone().multiply
+	(
+		quaternionsForRotation[0]
+	);
+
+	var coordsRotatedPremultiplied = quaternionsMultiplied.applyToCoordsAsRotation
+	(
+		coordsToRotate.clone()
+	); 
+
+	document.write
+	(
+		"coordsRotatedPremultiplied is " 
+		+ coordsRotatedPremultiplied.toString()
+		+ newline
+	);
+
+}
+
+// classes
+
+function Coords(x, y, z)
+{
+	this.x = x;
+	this.y = y;
+	this.z = z;
+}
+{
+	Coords.prototype.clone = function()
+	{
+		return new Coords(this.x, this.y, this.z);
+	}
+
+	Coords.prototype.divide = function(divisor)
+	{
+		this.x /= divisor;
+		this.y /= divisor;
+		this.z /= divisor;
+
+		return this;
+	}
+
+	Coords.prototype.magnitude = function()
+	{
+		return Math.sqrt(this.x * this.x + this.y * this.y + this.z * this.z);
+	}
+
+	Coords.prototype.normalize = function()
+	{
+		return this.divide(this.magnitude());	
+	}
+
+	Coords.prototype.overwriteWith = function( x,  y,  z)
+	{
+		this.x = x;
+		this.y = y;
+		this.z = z;
+
+		return this;
+	}
+
+	Coords.prototype.toString = function()
+	{
+		return "(" + this.x + "," + this.y + "," + this.z + ")";
+	}
+}
+
+
+function Quaternion(w, x, y, z)
+{
+	this.w = w;
+	this.x = x;
+	this.y = y;
+	this.z = z;
+}
+{
+	// static methods
+
+	Quaternion.fromAxisAndRadiansToRotate = function(axisToRotateAround, radiansToRotate)
+	{
+	
+		var radiansToRotateHalf = radiansToRotate / 2;		
+		var sineOfRadiansToRotateHalf = Math.sin(radiansToRotateHalf);
+	
+		var w = Math.cos(radiansToRotateHalf);
+		var x = axisToRotateAround.x * sineOfRadiansToRotateHalf;
+		var y = axisToRotateAround.y * sineOfRadiansToRotateHalf;
+		var z = axisToRotateAround.z * sineOfRadiansToRotateHalf;
+
+		var returnValue = new Quaternion(w, x, y, z).normalize();
+
+		return returnValue;
+	}
+
+
+	// instance methods
+
+	Quaternion.prototype.applyToCoordsAsRotation = function(coordsToRotate)
+	{
+		var coordsToRotateAsQuaternion = new Quaternion
+		(
+			0,
+			coordsToRotate.x,
+			coordsToRotate.y,
+			coordsToRotate.z
+		);
+
+		var result = this.clone().multiply
+		(
+			coordsToRotateAsQuaternion	
+		).multiply
+		(
+			this.clone().invert()
+		);
+
+		coordsToRotate.overwriteWith(result.x, result.y, result.z);
+
+		return coordsToRotate;
+	}	
+
+	Quaternion.prototype.clone = function()
+	{
+		return new Quaternion(this.w, this.x, this.y, this.z);
+	}
+
+	Quaternion.prototype.divide = function(divisor)
+	{
+		this.w /= divisor;
+		this.x /= divisor;
+		this.y /= divisor;
+		this.z /= divisor;
+
+		return this;
+	}
+
+	Quaternion.prototype.invert = function()
+	{
+		var magnitude = this.magnitude();
+
+		this.divide(magnitude * magnitude);
+
+		this.x *= -1;
+		this.y *= -1;
+		this.z *= -1;
+
+		return this;
+	}
+
+	Quaternion.prototype.multiply = function(other)
+	{
+		return this.overwriteWithWXYZ
+		(
+			this.w * other.w - this.x * other.x - this.y * other.y - this.z * other.z,
+			this.w * other.x + this.x * other.w + this.y * other.z - this.z * other.y,
+			this.w * other.y - this.x * other.z + this.y * other.w + this.z * other.x,
+			this.w * other.z + this.x * other.y - this.y * other.x + this.z * other.w
+		);
+	}
+
+	Quaternion.prototype.magnitude = function()
+	{
+		return Math.sqrt
+		(
+			this.w * this.w 
+			+ this.x * this.x 
+			+ this.y * this.y 
+			+ this.z * this.z
+		);
+	}
+
+	Quaternion.prototype.normalize = function()
+	{
+		return this.divide(this.magnitude());
+	}
+
+	Quaternion.prototype.overwriteWith = function(other)
+	{
+		this.overwriteWithWXYZ(other.w, other.x, other.y, other.z);
+
+		return this;
+	}
+
+	Quaternion.prototype.overwriteWithWXYZ = function(w,  x,  y,  z)
+	{
+		this.w = w;
+		this.x = x;
+		this.y = y;
+		this.z = z;
+
+		return this;
+	}
+}
+
+// run
+
+main();
+
+
+</script>
+</body>
+</html>
