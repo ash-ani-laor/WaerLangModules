@@ -1,9 +1,36 @@
-<mxfile host="app.diagrams.net" modified="2023-04-05T06:35:34.179Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/111.0" etag="7ozU0zzu1zVqsOAfqEMK" version="21.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-05T06:39:25.070Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/111.0" etag="_v7u0Wb3SmNismj9jZak" version="21.1.4" type="github">
   <diagram id="6a731a19-8d31-9384-78a2-239565b7b9f0" name="Page-1">
-    <mxGraphModel dx="1313" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1306" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1555" value="&lt;div&gt;17 основ&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-170" y="459" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1556" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1557" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="313" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1558" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="386" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1559" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="459" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1560" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="531" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1561" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="604" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1562" value="10 Сфирот Оц Хаим как опыт" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1563" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="677" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
