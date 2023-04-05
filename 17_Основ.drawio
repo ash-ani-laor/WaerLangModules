@@ -1,35 +1,41 @@
-<mxfile host="app.diagrams.net" modified="2023-04-05T06:39:25.070Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/111.0" etag="_v7u0Wb3SmNismj9jZak" version="21.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-05T07:06:19.323Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/111.0" etag="6vcpG1ITLFExuXeotQcw" version="21.1.4" type="github">
   <diagram id="6a731a19-8d31-9384-78a2-239565b7b9f0" name="Page-1">
-    <mxGraphModel dx="1306" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1017" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1555" value="&lt;div&gt;17 основ&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-170" y="459" width="120" height="60" as="geometry" />
+        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1555" value="&lt;div&gt;17 основ&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="200" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1556" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="160" y="240" width="120" height="60" as="geometry" />
+        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1556" value="Z" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="240" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1557" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="160" y="313" width="120" height="60" as="geometry" />
+        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1557" value="Н" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="280" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1558" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="160" y="386" width="120" height="60" as="geometry" />
+        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1558" value="С" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="320" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1559" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="160" y="459" width="120" height="60" as="geometry" />
+        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1559" value="В" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="360" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1560" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="160" y="531" width="120" height="60" as="geometry" />
+        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1560" value="Ю" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="399" width="40" height="31" as="geometry" />
         </mxCell>
-        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1561" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="160" y="604" width="120" height="60" as="geometry" />
+        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1561" value="З" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="440" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1562" value="10 Сфирот Оц Хаим как опыт" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="160" y="750" width="120" height="60" as="geometry" />
+        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1562" value="10 Сфирот Оц Хаим как интериоризированный опыт предков" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="519" width="160" height="51" as="geometry" />
         </mxCell>
-        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1563" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="160" y="677" width="120" height="60" as="geometry" />
+        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1563" value="Ц" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="480" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1569" value="Беспорядочные мысли" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;swimlaneFillColor=none;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="530" y="410" width="990" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxdIKLFSXvYpvOkSSfF-1571" value="Item 2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="cyxdIKLFSXvYpvOkSSfF-1569">
+          <mxGeometry y="30" width="990" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
